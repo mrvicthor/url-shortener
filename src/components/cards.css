@@ -1,0 +1,125 @@
+.cards {
+  background-color: #cacaca;
+  padding-top: 124px;
+  padding-bottom: 198px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.card-wrapper-title {
+  text-align: center;
+  color: var(--VeryDarkViolet);
+  font-size: 2.3rem;
+  margin-bottom: 0;
+}
+
+.card-description-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 28%;
+}
+.card-wrapper-text {
+  text-align: center;
+  color: var(--grayishViolet);
+}
+
+.card-container {
+  position: relative;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 315px;
+  gap: 25px;
+}
+.card-container::before {
+  content: "";
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--cyan);
+}
+.card-container > div:nth-last-child(2) {
+  align-self: center;
+}
+.card-container div:last-child {
+  align-self: flex-end;
+}
+.card--item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+
+  position: relative;
+}
+
+.cards--item--pic-wrap {
+  background-color: var(--darkViolet);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -57px;
+  left: -3px;
+}
+
+.cards--item--header {
+  color: var(--VeryDarkViolet);
+  font-size: 1.2em;
+  margin-top: 2.5rem;
+  font-weight: 500;
+}
+
+.cards--item--text {
+  color: var(--gray);
+  margin-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    padding-top: 170px;
+  }
+  .card-wrapper-title {
+    font-size: 2rem;
+  }
+  .card-description-wrapper {
+    margin: 0 12%;
+  }
+  .card-wrapper-text {
+    font-size: 20px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 80px;
+    position: relative;
+  }
+  .card-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--cyan);
+    width: 10px;
+    height: 100%;
+  }
+  .card--item {
+    position: relative;
+  }
+  .cards--item--pic-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translate(-100%);
+  }
+  .cards--item--header {
+    text-align: center;
+  }
+}

@@ -1,0 +1,98 @@
+.nav {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10000;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  overflow: hidden;
+}
+.menu-icon {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  gap: 18px;
+  height: 80px;
+  font-size: 18px;
+  margin-right: auto;
+}
+.nav-menu > .nav-item.mobile {
+  display: none;
+}
+
+.active {
+  color: var(--darkViolet);
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--gray);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: var(--darkViolet);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu.active {
+    position: absolute;
+    height: 60vh;
+    top: 356%;
+    border-radius: 4px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--darkViolet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 78%;
+    padding: 30px 8%;
+    z-index: 10000;
+  }
+  .nav-menu.active > .nav-item {
+    width: 94%;
+    text-align: center;
+    font-size: 20px;
+
+    /* height: 20px; */
+  }
+  .nav-menu.nav-menu.active > .nav-item.mobile {
+    display: block;
+  }
+
+  .nav-menu.active > .nav-item > .line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--gray);
+  }
+  .nav-menu.active > .nav-item > .nav-link {
+    color: var(--gray);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-menu.active > .nav-item > .nav-link:hover {
+    color: var(--darkViolet);
+  }
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,55 @@
+.btn {
+  padding: 8px 20px;
+  border-radius: 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: transparent;
+  color: var(--gray);
+}
+
+.btn--outline {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cyan);
+  color: #fff;
+  border: 1px solid var(--cyan);
+  transition: all 0.3s ease-out;
+}
+.btn--mobile {
+  width: 100%;
+  padding: 8px 20px;
+  font-size: 20px;
+}
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 20px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--login {
+  padding: 8px 20px;
+  font-size: 20px;
+}
+.btn--cta {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--gray);
+  transition: all 0.3s ease-out;
+}
+.btn--login:hover {
+  color: var(--darkViolet);
+}
+.btn--medium:hover,
+.btn--large:hover {
+  opacity: 0.2;
+
+  color: #fff;
+  transition: all 0.3s ease-out;
+}

@@ -1,0 +1,42 @@
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+.list-item {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 0 15px;
+  z-index: 10;
+}
+
+.short-link {
+  margin-left: auto;
+  color: var(--cyan);
+}
+.copy-btn {
+  background: var(--cyan);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 32px;
+  border-radius: 6px;
+  color: #fff;
+}
+.btn-clicked {
+  background-color: var(--darkViolet);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 32px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.copy-btn:hover {
+}
